@@ -146,7 +146,7 @@ function App() {
         <p className="mt-3">
           Diseñado y desarrollado por{" "}
           <a
-            href="https://portfolio-psi-tan-57.vercel.app/"
+            href="https://juancatena.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent font-semibold hover:opacity-90 transition"
