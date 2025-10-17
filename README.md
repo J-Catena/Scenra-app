@@ -1,73 +1,36 @@
-# React + TypeScript + Vite
+# 🎬 Scenra App – React & API | Juan Catena
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con **React** y **TypeScript**, que consume una **API personalizada** para mostrar información dinámica sobre películas y series.  
+El proyecto está orientado a practicar la integración entre frontend y backend, así como el manejo de peticiones asíncronas.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías
+- **Frontend:** React, TypeScript, JavaScript, HTML, CSS  
+- **Estilos:** TailwindCSS  
+- **Backend / API:** Node.js + Express (o la tecnología que hayas usado)  
+- **Despliegue:** [Vercel](https://vercel.com)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💡 Descripción
+Scenra App nació como un proyecto personal para seguir aprendiendo sobre:
+- Consumo e integración de **APIs REST**  
+- Manejo de **estados asíncronos** y hooks personalizados  
+- Organización modular del código en React  
+- Despliegue de aplicaciones completas (frontend + API)
 
-## React Compiler
+## 🧩 Características
+- Búsqueda de películas y series desde una API  
+- Visualización de detalles (sinopsis, imagen, puntuación, etc.)  
+- Diseño responsive y ligero  
+- Estructura modular y escalable  
+- Comunicación eficiente con el backend mediante fetch / Axios  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌐 Demo
+👉 [scenra-app.vercel.app](https://scenra-app.vercel.app)
 
-## Expanding the ESLint configuration
+## 📦 Instalación local
+Si quieres probarlo en tu equipo:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+git clone https://github.com/tu-usuario/scenra-app.git
+cd scenra-app
+npm install
+npm start
