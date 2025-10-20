@@ -71,7 +71,7 @@ const MovieDetail: FC = () => {
             )}
 
             {/* 📄 Información principal */}
-            <div className="flex-1">
+            <div className="flex-1 overflow-hidden">
                 <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">
                     {movie.title}
                 </h2>
